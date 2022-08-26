@@ -3,16 +3,6 @@ services:
   firebase-tools:
     build:
       context: ./firebase-tools
-    ports:
-      - "4000:4000"
-      - "4400:4400"
-      - "4600:4600"
-      - "5001:5001"
-      - "8080:8080"
-      - "8085:8085"
-      - "9000:9000"
-      - "9099:9099"
-      - "9229:9229"
   pubsub-provisioner:
     image: jonnyorman/pubsub-provisioner:latest
     depends_on:
